@@ -1,0 +1,24 @@
+﻿<Window x:Class="ProyectoFinal.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoFinal"
+        mc:Ignorable="d" ResizeMode="NoResize" Background="GreenYellow" WindowStartupLocation="CenterScreen"
+        Title="Login" Height="400" Width="350" WindowStyle="None">
+
+    <Border Background="#2e3137" CornerRadius="20" Margin="20">
+        <StackPanel Margin="20">
+            <Separator />
+            <Label Content="Incio de Sesión" Foreground="White" FontSize="25" HorizontalAlignment="Center"/>
+            <Separator />
+            <Label Content="Usuario" Foreground="White"/>
+            <TextBox x:Name="txtUsuario" Background="#545d6a" Foreground="White" FontSize="18"/>
+            <Label Content="Contraseña" Foreground="White"/>
+            <PasswordBox x:Name="txtContrasena" Background="#545d6a" Foreground="White" FontSize="18"/>
+            <Separator Margin="0 10"/>
+            <Button x:Name="btnSubmit" Click="btnSubmit_Click" Content="Iniciar Sesión" Margin="50 10" Background="#545d6a" Foreground="White" FontSize="18"/>
+            <Button x:Name="btnRegistrarse" Click="btnRegistrarse_Click" Content="Registrarse" Margin="50 10" Background="#545d6a" Foreground="White" FontSize="18"/>
+        </StackPanel>
+    </Border>
+</Window>
